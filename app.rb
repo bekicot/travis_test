@@ -7,7 +7,6 @@ require 'net/http'
 require 'logger'
 
 # Parsing Commandline Arguments
-puts 'Parsing Arguments'
 
 options = {}
 OptionParser.new do |opts|
@@ -29,7 +28,6 @@ ISLAND_INDEX_URL    = 'http://www.ppk-kp3k.kkp.go.id/direktori-pulau/index.php/p
 
 PROVINCE_NAME_INDEX = 3
 
-puts 'Initilizing logger'
 LOGGER = Logger.new(options[:logger] || 'logs')
 
 def parse_coordinate(coordinate_text)
