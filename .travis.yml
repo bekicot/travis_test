@@ -5,4 +5,4 @@ install:
   - gem install bundler
   - bundle install
 script:
-  - ruby app.rb
+  - ruby app.rb -t
